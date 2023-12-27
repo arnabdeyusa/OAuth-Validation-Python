@@ -9,23 +9,23 @@ products:
   - azure App Service
   - azure FunctionApp
 description: Python Library to validate Ping JWT token in Python/Flask API
-urlFragment: 'https://github.com/AAInternal/ping-validation'
+urlFragment: 'https://github.com/arnabdeyusa/OAuth-Validation-Python'
 ---
 
 # Step 1:
 Create a .env file for local environment and set this following variable
-ISSUER=Issuer_Link(e.g. https://idpstage.aa.com)
+ISSUER=Issuer_Link(e.g. https://bbbstage.cc.com)
 AUDIENCE=appclientid
 ALGO=algo(e.g. RS256)
-AUTHURL=Validation_Key_Url(e.g. https://idpstage.aa.com/ext/regular)
+AUTHURL=Validation_Key_Url(e.g. https://bbstage.cc.com/ext/regular)
 Please make all these above variables are included in the Application Environment (e.g. DEV, STAGE, PROD)
 
 | Key                                        | Value
 | ------------------------------------------ | ------
-| ISSUER                                     | Issuer_Link(e.g. https://idpstage.aa.com)      
+| ISSUER                                     | Issuer_Link(e.g. https://bbbstage.cc.com)      
 | AUDIENCE                                   | appclientid      
 | ALGO                                       | algo(e.g. RS256)      
-| AUTHURL                                    | Validation_Key_Url(e.g. https://idpstage.aa.com/ext/regular)     
+| AUTHURL                                    | Validation_Key_Url(e.g. https://bbbstage.cc.com/ext/regular)     
 
 # Step 2:
 Add the following as imports in the app.py file
